@@ -1,0 +1,5 @@
+server:
+    port: 8080
+app:
+    service-principal: HTTP/mixam.softtest.com@SOFTTEST.COM
+    keytab-location: /tmp/tomcat.keytab

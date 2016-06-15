@@ -1,0 +1,9 @@
+server:
+    port: 8080
+app:
+    ad-domain: SOFTTEST.COM
+    ad-server: ldap://testdc01.softtest.com/
+    service-principal: HTTP/mixam.softtest.com@SOFTTEST.COM
+    keytab-location: /tmp/tomcat.keytab
+    ldap-search-base: dc=softtest,dc=com
+    ldap-search-filter: "(| (userPrincipalName={0}) (sAMAccountName={0}))"
