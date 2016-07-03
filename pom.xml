@@ -9,10 +9,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>springweb-parent</module>
         <module>spring-javaconf-example</module>
         <module>spring-security-krb5-examples</module>
         <module>spring-security-krb5-tomcat-examples</module>
-        <module>spring-webinitializer-examples</module>
+        <module>spring-webinitializer-example</module>
     </modules>
 </project>
