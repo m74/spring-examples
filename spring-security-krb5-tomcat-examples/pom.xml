@@ -6,7 +6,6 @@
         <artifactId>springweb-parent</artifactId>
         <groupId>ru.com.m74.spring</groupId>
         <version>1.0</version>
-        <relativePath>../springweb-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

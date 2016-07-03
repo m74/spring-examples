@@ -8,7 +8,6 @@
         <groupId>ru.com.m74.spring</groupId>
         <artifactId>springweb-parent</artifactId>
         <version>1.0</version>
-        <relativePath>../springweb-parent/pom.xml</relativePath>
     </parent>
 
     <packaging>war</packaging>
