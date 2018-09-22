@@ -2,10 +2,8 @@ package ru.com.m74.webapp.spring.test.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.kerberos.authentication.KerberosServiceAuthenticationProvider;
 import org.springframework.security.kerberos.client.config.SunJaasKrb5LoginConfig;
 import org.springframework.security.kerberos.client.ldap.KerberosLdapContextSource;
@@ -36,8 +34,9 @@ import org.springframework.security.ldap.userdetails.LdapUserDetailsService;
  * @see <a href="http://publib.boulder.ibm.com/wasce/V3.0.0/ru/using-spnego-in-ce.html">Настройка SSO (rus)</a>
  * @since 16.05.16 17:30
  */
-@Configuration
-@EnableWebSecurity
+//@Configuration
+//@EnableWebSecurity
+//@Profile("ntlm")
 public class NtlmSecurityConfig extends SpnegoSecurityConfig {
 
     @Value("${app.ad-domain}")

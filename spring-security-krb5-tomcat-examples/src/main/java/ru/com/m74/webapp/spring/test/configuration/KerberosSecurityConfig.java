@@ -1,7 +1,9 @@
 package ru.com.m74.webapp.spring.test.configuration;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -16,8 +18,9 @@ import org.springframework.security.kerberos.authentication.sun.SunJaasKerberosC
  * @author mixam
  * @since 15.05.16 19:44
  */
-//@Configuration
-//@EnableWebSecurity
+@Configuration
+@EnableWebSecurity
+//@Profile("kerberos")
 public class KerberosSecurityConfig extends SimpleSecurityConfig {
 
     @Override
